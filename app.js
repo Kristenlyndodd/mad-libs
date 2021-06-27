@@ -10,11 +10,14 @@ const adjectiveInput = document.getElementById("adjective-input")
 const pastTenseVerbInput = document.getElementById("past-tense-verb-input")
 const noun2Input = document.getElementById("noun-2-input")
 
-const noun1Btn = document.getElementById("noun-1-button");
-const noun2Btn = document.getElementById("noun-2-button");
-const verb1Btn = document.getElementById("verb-1-button");
-const pastTenseVerbBtn = document.getElementById("past-tense-verb-button");
-const adjectiveBtn = document.getElementById("adjective-button");
+
+const submitBtn = document.getElementById('submit'); 
+
+// const noun1Btn = document.getElementById("noun-1-button");
+// const noun2Btn = document.getElementById("noun-2-button");
+// const verb1Btn = document.getElementById("verb-1-button");
+// const pastTenseVerbBtn = document.getElementById("past-tense-verb-button");
+// const adjectiveBtn = document.getElementById("adjective-button");
 
 const hidden = document.getElementsByClassName('hidden');
 
@@ -22,32 +25,63 @@ const changeText = (elem, inputField) => {
     elem.textContent = inputField.value;
 }
 
-noun1Btn.addEventListener('click', () => {
-    console.log(noun1, noun1Input);
-    changeText(noun1, noun1Input);
-})
+submitBtn.addEventListener('click', () => {
+    console.log(noun1, noun1Input, noun2, noun2Input, verb1, verb1Input, 
+        pastTenseVerb, pastTenseVerbInput, adjective, adjectiveInput);
+    changeText(noun1, noun1Input, noun2, noun2Input, verb1, verb1Input, 
+        pastTenseVerb, pastTenseVerbInput, adjective, adjectiveInput);
+});
 
-noun2Btn.addEventListener('click', () => {
-    console.log(noun2, noun2Input);
-    changeText(noun2, noun2Input);
-})
+submitBtn.addEventListener('click', () => {
+    console.log (noun1, noun1Input);
+    changeText (noun1, noun1Input);
+});
 
+submitBtn.addEventListener('click',  () => {
+    console.log (noun2, noun2Input );
+    changeText (noun2, noun2Input);
+});
 
-verb1Btn.addEventListener('click', () => {
-    console.log(verb1, verb1Input);
-    changeText(verb1, verb1Input);
-})
+submitBtn.addEventListener('click', () => {
+    console.log (verb1, verb1Input);
+    changeText (verb1, verb1Input);
+});
 
-pastTenseVerbBtn.addEventListener('click', () => {
-    console.log(pastTenseVerb, pastTenseVerbInput);
-    changeText(pastTenseVerb, pastTenseVerbInput);
-})
+submitBtn.addEventListener('click', () => {
+    console.log (pastTenseVerb, pastTenseVerbInput);
+    changeText (pastTenseVerb, pastTenseVerbInput);
+});
 
-adjectiveBtn.addEventListener('click', () => {
+submitBtn.addEventListener('click', () => {
     console.log(adjective, adjectiveInput);
-    changeText(adjective, adjectiveInput);
-})
+    changeText (adjective, adjectiveInput);
+});
+// noun1Btn.addEventListener('click', () => {
+//     console.log(noun1, noun1Input);
+//     changeText(noun1, noun1Input);
+// })
 
-noun2Btn.addEventListener('click', () => {
+// noun2Btn.addEventListener('click', () => {
+//     console.log(noun2, noun2Input);
+//     changeText(noun2, noun2Input);
+// })
+
+
+// verb1Btn.addEventListener('click', () => {
+//     console.log(verb1, verb1Input);
+//     changeText(verb1, verb1Input);
+// })
+
+// pastTenseVerbBtn.addEventListener('click', () => {
+//     console.log(pastTenseVerb, pastTenseVerbInput);
+//     changeText(pastTenseVerb, pastTenseVerbInput);
+// })
+
+// adjectiveBtn.addEventListener('click', () => {
+//     console.log(adjective, adjectiveInput);
+//     changeText(adjective, adjectiveInput);
+// })
+
+submitBtn.addEventListener('click', () => {
     hidden[0].style.display = 'block'
 })

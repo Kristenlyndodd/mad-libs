@@ -2,7 +2,7 @@
     display: none;
     text-align: center;
     font-family:'Cookie',cursive;
-    font-size: 25px;
+    font-size: 2rem;
 }
 header{
     display: flex;
@@ -21,7 +21,8 @@ body{
 }
 
 main{
-    
+    display: flex;
+    align-content:inherit;
 
 }
 
@@ -35,10 +36,20 @@ button {
     background-color: yellow;
     border-radius: 20px;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
 }
-input {
+input { 
+    display:flex;
     align-content: center;
+    justify-content: center;
     width: 200px;
     border-radius: 20px;
     background-color: yellow;
+}
+label {
+    display: flex;
+    align-content: left;
+    justify-content: left;
+    font-size: 30px;
+
 }
